@@ -1,0 +1,190 @@
+/* Sidebar.css */
+body {
+    font-family: Arial, sans-serif;
+}
+.modal-top {
+  margin-top: 15px !important; 
+  transform: translate(0, 0) !important; 
+  padding: 0px;
+}
+
+
+
+.bg{
+    background-color: #F2EAE1;
+}
+.logout-button {
+    text-align: center;
+}
+
+.logout-button .btn {
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.logout-button .btn i {
+    margin-right: 5px;
+}
+
+.nav-link {
+    align-items: center;
+    background-color: #F2EAE1;
+    border-radius: 5px;
+    color: #333;
+    display: flex;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    background-color: #e9ecef;
+}
+
+.nav-link i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.navbar {
+    background-color: #F2EAE1;
+}
+
+.navbar-nav {
+    background-color: #F2EAE1;
+    list-style: none;
+    width: 100%;
+}
+
+.profiles {
+    background-color: #F2EAE1;
+    border: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profiles-picture {
+    border-radius: 50%;
+    height: 100px;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+.role {
+    color: orange;
+    font-size: 14px;
+    margin: 0;
+}
+
+.side {
+    background-color: #F2EAE1;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    left: 0;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 250px;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav-link {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.nav-link i {
+    margin-right: 10px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    margin-bottom: 15px;
+    width: 100px;
+}
+
+.sidebar {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Ensure the link itself is flex and centered */
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the content horizontally */
+    background-color: #F2EAE1;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Center the icon within the link */
+.nav-link i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* Ensure the text and icon are both centered */
+.nav-link span {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the content horizontally */
+}
+
+/* Apply hover and active states */
+.nav-link.active,
+.nav-link:hover {
+    background-color: #e9ecef;
+}
+
+
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+    .mobile-navbar .navbar-brand {
+        cursor: pointer;
+    }
+
+    .mobile-navbar .profile-info h3 {
+        color: black;
+    }
+
+    .mobile-navbar .profile-info .role {
+        color: orange;
+    }
+
+    .mobile-navbar .d-inline-block.align-center {
+        vertical-align: middle;
+    }
+
+    .mobile-navbar .ml-auto .nav-link {
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-navbar .logout-button .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}

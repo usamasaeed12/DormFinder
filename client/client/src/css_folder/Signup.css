@@ -1,0 +1,184 @@
+.signupPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+@font-face {
+  font-family: account_font;
+  src: url(fonts/Poppins-Medium.ttf);
+}
+
+h1 {
+  font-family: account_font;
+  margin-bottom: 10px; 
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.stepper {
+  width: 35%;
+  height: auto;
+  margin-top: 30px;
+}
+
+form {
+  margin-top: 25px;
+  width: 100%; 
+  max-width: 300px; 
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+  margin-left: 5px;
+  font-size: 14px; 
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px; 
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.phone {
+  padding: 10px; 
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+link {
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 30px;
+  background-color: #F4BF96;
+  color: white;
+  cursor: pointer;
+  width: 100%; 
+  max-width: 300px; 
+  margin-bottom: 10px;
+  transition: background-color 0.3s; 
+}
+
+.select-container {
+  width: 100%;
+  padding: 10px; 
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+select {
+  width: 10%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  appearance: none;
+}
+
+option {
+  padding: 10px;
+  font-size: 16px;
+}
+
+select:focus {
+  outline: none;
+  border-color: #ccc;
+}
+
+.profile {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 20px; 
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px; 
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  appearance: none; /* Removes default arrow button */
+  background-color: #ffffff; /* Set background color */
+  font-size: 16px;
+  outline: none; /* Remove default focus outline */
+}
+
+/* Style for when the date input is focused */
+input[type="date"]:focus {
+  border-color: #007bff; /* Example focus color */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Example focus shadow */
+}
+
+/* Add this to your Signup.css or App.css */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.popup-inner p {
+  margin-bottom: 20px;
+}
+
+.popup-inner button {
+  padding: 10px 20px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  bottom: 12px;
+}
